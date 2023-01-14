@@ -1,0 +1,24 @@
+﻿<dx:ThemedWindow 
+    x:Class="Reimbursement.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    Title="商品报销文件自动生成工具@HITlmc" Height="800" Width="1000" Icon="/logo.ico">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="491*"/>
+        </Grid.ColumnDefinitions>
+        <Button HorizontalAlignment="Left" Margin="182,623,0,0" VerticalAlignment="Top" Click="Open1" Width="100" Grid.Column="2">选择商品明细图片</Button>
+        <Button HorizontalAlignment="Left" Margin="332,623,0,0" VerticalAlignment="Top" Click="Open2" Width="100" Grid.Column="2">选择支付凭证图片</Button>
+        <Button HorizontalAlignment="Left" Margin="482,623,0,0" VerticalAlignment="Top" Click="Open3" Width="100" Grid.Column="2">选择商品发票图片</Button>
+        <Button HorizontalAlignment="Left" Margin="632,591,0,0" VerticalAlignment="Top" Click="ExportWord" Height="51" Width="126" Grid.Column="2">生成文件</Button>
+        <TextBox Name="topText" HorizontalAlignment="Left" Margin="4,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="980" Height="290" Text="topText" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="281" Margin="213,305,0,0" VerticalAlignment="Top" Width="446" Name="imageShow" Source="C:\Users\李美程\Desktop\报销\Reimbursement\Reimbursement\logo.png" Grid.Column="2"/>
+        <TextBox Name="text1" HorizontalAlignment="Left" Margin="182,591,0,0" TextWrapping="Wrap" Text="未选择图片" VerticalAlignment="Top" Width="100" Height="27" Grid.Column="2"/>
+        <TextBox Name="text2" HorizontalAlignment="Left" Margin="332,591,0,0" TextWrapping="Wrap" Text="未选择图片" VerticalAlignment="Top" Width="100" Height="27" Grid.Column="2"/>
+        <TextBox Name="text3" HorizontalAlignment="Left" Margin="482,591,0,0" TextWrapping="Wrap" Text="未选择图片" VerticalAlignment="Top" Width="100" Height="27" Grid.Column="2"/>
+    </Grid>
+</dx:ThemedWindow>
